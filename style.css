@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}  
+    
+h1 {
+     color: white;
+}
+    
+header, footer {
+    background-color: black;
+}
+
+main {
+    margin: auto;
+}
+
+&copy {
+    color: white;
+}
+
+

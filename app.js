@@ -1,19 +1,15 @@
-function getColor (){
-    let yourColor = prompt("What other color moodboards would you like to see on this website?");
-    document.write(yourColor + " is a great color! Thanks for your input!");
+function welcome(username){
+   console.log("Hello " + username "!");
 }
 
-getColor();
-
-function getAnswer (){
-    let doYouLike = prompt("Do you like cool colors?");
-    if(doYouLike === "yes")
-    document.write("Cool colors are better than warm colors.");
-    else
-    document.write("Hm, very interesting!");
+let username = prompt("Create a Username")
+document.write("Hello " + username "!")
+if (username == "") {
+error = ("No value was entered. Please try again.")
+alert(error);
+return false;
 }
 
-getAnswer();
 
 function getFavColor (){
 let whatColor = prompt("What's your favorite color?");

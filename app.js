@@ -2,8 +2,7 @@
 let username = prompt("Create a Username")
 document.write("Hello " + username)
 if (username === "") {
-error = ("No value was entered. Please try again.")
-alert(error);
+alert("No value was entered. Please try again.")
 return false;
 }
 

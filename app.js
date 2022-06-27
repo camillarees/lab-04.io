@@ -35,7 +35,7 @@ getAnswer();
 function sunsetPictures() {
     let pictures = prompt("How many sunset pictures do you want?");
     for (let i = 1; i <= pictures; i++) {
-        document.write('<img src="./img_sunset.jpg" alt="sunset" width="400" height="600"/>');
+        document.write('<img src="images/img_sunset.jpg" alt="sunset" width="400" height="600"/>');
     }
     
 }

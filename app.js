@@ -10,13 +10,16 @@ function createUsername (){
 createUsername();
 
 function getFavColor (){
-    // let color = "blue";
-    let whatColor = prompt("What's your favorite color?").toLowerCase();
-    while (whatColor !== "blue") {
-        let whatColor = prompt("What's your favorite color?").toLowerCase(); 
-    }
-    document.write(whatColor + " is my favorite too!");
+    let whatColor;
+    do {
+        whatColor = prompt("What's your favorite color?").toLowerCase();
+        if (whatColor != "blue") {
+            alert("You have to say blue.")
+        } else {
+            document.write(whatColor + " is my favorite too!");
+        }
 
+    } while (whatColor != "blue")
 }
 
 getFavColor();
@@ -32,7 +35,7 @@ getAnswer();
 function sunsetPictures() {
     let pictures = prompt("How many sunset pictures do you want?");
     for (let i = 1; i <= pictures; i++) {
-        document.write('<img src="./img_sunset.jpg" alt="sunset">')
+        document.write('<img src="img_sunset.jpg" alt="sunset">')
     }
     
 }
